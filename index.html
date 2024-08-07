@@ -14,7 +14,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #000000, #003366, #0033cc); /* Degradado negro a azul rey */
+            background: linear-gradient(to bottom, #000000, #003366, #0033cc);
             color: white;
         }
         header {
@@ -37,6 +37,7 @@
             border-radius: 5px;
             font-weight: bold;
             font-size: 1.2em;
+            cursor: pointer;
         }
         .icons {
             text-align: center;
@@ -83,7 +84,7 @@
         <div class="card">
             <div class="card-body">
                 <h2>¡Encuentra el camión perfecto para ti!</h2>
-                <p>Te entregaremos un vehículo listo para trabajar. Ya nos encargamos de revisar su correcto funcionamiento.</p>
+                <p id="contenido">Te entregaremos un vehículo listo para trabajar. Ya nos encargamos de revisar su correcto funcionamiento.</p>
                 <p>Contáctanos para más información.</p>
                 <p>Documentos y pagos en regla. Facturamos a tu nombre.</p>
             </div>
@@ -136,5 +137,11 @@
     <footer>
         <p>&copy; 2024 Camiones Seminuevos VRG TX. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function actualizarContenido() {
+            document.getElementById('contenido').innerText = 'El contenido ha sido actualizado. ¡Gracias por tu interés!';
+        }
+    </script>
 </body>
 </html>
